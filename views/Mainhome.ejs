@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/mainHome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="mainhome">
+    <h1>Hello there!!</h1>
+    <h2>I am a software developer</h2>
+    <button type="submit"><a href="/sunita">See My portfolio</a></button>
+</div>
+</body>
+<script>
+window.addEventListener("unload", function() {
+    document.querySelector(".mainhome").classList.add("animate-out");
+    document.querySelectorAll("h1, h2, button[type='submit']").forEach(function(element) {
+        element.classList.add("animate-out");
+    });
+});
+</script>
+</html>

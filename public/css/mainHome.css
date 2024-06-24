@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+}
+.mainhome{
+    margin-top: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 34px;
+}
+button{
+    width: 169px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 19px 19px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+/* transition styles */
+ /* Remove the fadeOut animation from the CSS */
+
+/* Add animation to the mainhome div */
+.mainhome {
+    animation: fadeIn 2s forwards;
+}
+
+/* Add animation to the h1 and h2 elements */
+h1, h2 {
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Add animation to the button */
+button[type="submit"] {
+    animation: fadeIn 2s forwards;
+    animation-delay: 1s;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Define the animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+.animate-out {
+    animation: fadeOut 1s forwards;
+}
