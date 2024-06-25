@@ -9,5 +9,5 @@ app.use(express.static('public'))
 const PORT =4000;
 app.use("/", router);
 app.listen(PORT, ()=>{
-    console.log(`server running on ${PORT}`);
+    console.log(`server running on http://127.0.0.1:${PORT}`);
 });
