@@ -76,3 +76,7 @@ button[type="submit"] {
 .animate-out {
     animation: fadeOut 1s forwards;
 }
+/* responsive desing */
+h1, h2{
+    text-align: center;
+}
