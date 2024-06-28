@@ -156,7 +156,7 @@ body.loaded .intro {
 .project{
     display:flex;
     flex-direction:row;
-
+   
 }
 .skills{
     margin: 60px 0px;
@@ -323,9 +323,9 @@ z-index: auto;
     position: relative;
     width: 100%;
    
-    background-image: url('back.avif');
-    background-size: cover;
-    background-position: center;
+    background-image: url('../images/back.avif') !important;
+    background-size: cover !important;
+    background-position: center !important;
     
     }
     
@@ -350,27 +350,30 @@ z-index: auto;
     }
     /* responsive design for project section */
     .project{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .box{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin:12px 0px;
-        
+        margin: 12px 0px;
+        flex-basis: 43%;
+        height: 476px;
+        padding: 12px 12px;
     }
     .box img{
-        width: 436px;
+        width: 342px;
         height: 277px;
     }
     }
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 700px){
         .img{
             width:344px;
+        }
+        .box{
+            flex-basis: 98%;
         }
         .intro{
             width: 331px;
@@ -383,8 +386,14 @@ z-index: auto;
         }
         .box img{
             
-            width: 264px;
-            height: 215px;
+            width: 414px;
+            height: 324px;
+        }
+    }
+    @media only screen and (max-width: 1070px){
+        .box img{
+            width: 326px;
+            height: 280px;
         }
     }
     /* responsive design of skill section */
@@ -419,8 +428,15 @@ z-index: auto;
     .form form input {
         width: 329px;
     }
+    .left{
+        margin-left: 39px;
+       }
+   
     button{
         width:248px;
+    }
+    #bigOne{
+        width: 295px;
     }
     .form form{
         justify-content: center;

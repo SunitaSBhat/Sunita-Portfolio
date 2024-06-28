@@ -9,11 +9,19 @@
 // scripts.js
 function toggleMenu() {
     var navLinks = document.getElementById('navLinks');
+    if(navLinks.style.display!="none"){
+        navLinks.style.display="none";
+    }
+    else{
     navLinks.style.display="flex";
     navLinks.style.flexDirection="column";
-    navLinks.style.marginTop="23px";
+    // navLinks.style.marginTop="23px";
     navLinks.style.backgroundColor="hotpink";
-    navLinks.style.margin="12px 12px";
     navLinks.style.width="177px";
+    navLinks.style.zIndex="1";
+    navLinks.style.position="relative";
+    navLinks.style.top="130px";
+    navLinks.style.left="-238px";
+    }
 }
 
