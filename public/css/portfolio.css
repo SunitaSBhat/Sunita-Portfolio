@@ -29,6 +29,7 @@ body{
 }
 #navLinks li{
     list-style:none;
+    margin: 3px 0px;
 }
 .navbar h1{
     margin:29px 21px;
@@ -128,6 +129,11 @@ body.loaded .intro {
 .Projects h1{
     margin:12px 12px;
 }
+
+.box:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .box{
     margin-left: 242px;
     border: 2px solid white;
@@ -143,6 +149,7 @@ body.loaded .intro {
     border: 2px solid black;
     border-radius: 107px 102px;
     background-color: #ff000033;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .box img{
     width: 241px;
@@ -303,6 +310,8 @@ top:20px;
 z-index: auto;
 }
 }
+
+
 /* responsive desing of about section */
 @media only screen and (max-width: 1400px){
     .container{
@@ -353,6 +362,7 @@ z-index: auto;
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    
     .box{
         display: flex;
         flex-direction: column;
@@ -362,6 +372,7 @@ z-index: auto;
         flex-basis: 43%;
         height: 476px;
         padding: 12px 12px;
+       
     }
     .box img{
         width: 342px;

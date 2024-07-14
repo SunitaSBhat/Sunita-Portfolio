@@ -9,6 +9,7 @@
 // scripts.js
 function toggleMenu() {
     var navLinks = document.getElementById('navLinks');
+    var lists = document.getElementById('')
     if(navLinks.style.display!="none"){
         navLinks.style.display="none";
     }
@@ -19,6 +20,7 @@ function toggleMenu() {
     navLinks.style.backgroundColor="hotpink";
     navLinks.style.width="177px";
     navLinks.style.zIndex="1";
+    navLinks.style.height="182px";
     navLinks.style.position="relative";
     navLinks.style.top="130px";
     navLinks.style.left="-238px";
