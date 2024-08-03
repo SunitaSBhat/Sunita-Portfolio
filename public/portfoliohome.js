@@ -23,7 +23,8 @@ function toggleMenu() {
     navLinks.style.height="182px";
     navLinks.style.position="relative";
     navLinks.style.top="130px";
-    navLinks.style.left="-238px";
+    navLinks.style.left="-107px";
+    navLinks.style.marginBottom="-40px";
     }
 }
 
