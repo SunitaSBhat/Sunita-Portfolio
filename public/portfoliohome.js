@@ -20,7 +20,7 @@ function toggleMenu() {
     navLinks.style.backgroundColor="hotpink";
     navLinks.style.width="177px";
     navLinks.style.zIndex="1";
-    navLinks.style.height="182px";
+    navLinks.style.height="209px";
     navLinks.style.position="relative";
     navLinks.style.top="130px";
     navLinks.style.left="-107px";
