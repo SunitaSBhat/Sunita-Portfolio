@@ -117,11 +117,10 @@ body.loaded .intro {
 .img{
     margin-left: 242px;
     border: 2px solid white;
-    border-radius: 2118px 2000px;
+    border-radius: 84px;
     overflow: hidden;
-    width: 573px;
-    height: 461px;
-    background-color: black;
+    width: 495px;
+    height: 427px;
 }
 #projectHeading{
     margin:25px 0px;
@@ -141,14 +140,14 @@ body.loaded .intro {
     overflow: hidden;
     width: 573px;
     height: 461px;
-    background-color: black;
+   box-shadow: 12px 12px 25px;
     width: 526px;
     height: 437px;
     margin: 0px 12px;
     padding: 18px 20px;
-    border: 2px solid black;
+   
     border-radius: 107px 102px;
-    background-color: #ff000033;
+   
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .box img{
@@ -246,10 +245,19 @@ h2{
 }
 /* styling skill section */
 
-a{
+.custom-button{
     text-decoration: none;
     color: white;
-    margin: 0px 120px
+    background-color: #0000ff70;
+    margin: 0px 120px;
+    display: block;
+    border-radius: 20px 20px;
+    width: 105px;
+    height: 37px;
+    margin-top: 12px;
+    text-align: center;
+    padding: 12px;
+    margin-left:90px;
 }
 .development{
     display: flex;
