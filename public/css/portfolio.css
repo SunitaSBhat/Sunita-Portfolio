@@ -55,38 +55,13 @@ body{
 
 /* image trasition */
 /* Initial state: hidden offscreen to the right */
-.img {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
+
 
 /* Final state: visible and moved to the left side */
 body.loaded .img {
     opacity: 1;
-    transform: translateX(0);
-    animation: complexAnimation 5s ease-out forwards;
-}
-
-/* Advanced transition: keyframe animation */
-@keyframes complexAnimation {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
    
-    100% {
-        opacity: 1;
-        transform: translateX(-0);
-    }
-}
-
-/* words trasition */
-/* Final state: visible and moved to the right side */
-body.loaded .intro {
-    opacity: 1;
-    transform: translateX(0);
-    animation: complexAnimation 5s ease-out forwards;
+    animation: complexAnimation 1s ease-in ;
 }
 
 /* Advanced transition: keyframe animation */
@@ -95,14 +70,25 @@ body.loaded .intro {
         opacity: 0;
         transform: translateX(-100%);
     }
-    50% {
-        opacity: 1;
-        transform: translateX(20%) scale(1.2);
+   
+   
+}
+
+/* words trasition */
+/* Final state: visible and moved to the right side */
+body.loaded .intro {
+    opacity: 1;
+    transform: translateX(0);
+    animation: complexAnimation 2s;
+}
+
+/* Advanced transition: keyframe animation */
+@keyframes complexAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
     }
-     75% {
-        opacity: 1;
-        transform: translateX(20%) scale(0.8);
-    }
+   
     
 }
 .intro{
@@ -254,10 +240,11 @@ h2{
     border-radius: 20px 20px;
     width: 105px;
     height: 37px;
-    margin-top: 12px;
+   
     text-align: center;
     padding: 12px;
-    margin-left:90px;
+    margin-left: 90px;
+    margin-bottom: 23px !important;
 }
 .development{
     display: flex;
@@ -277,6 +264,7 @@ h1{
 }
 #bigOne{
     width: 475px;
+    margin: 12px 0px;
     height: 317px;
 }
 .left{
