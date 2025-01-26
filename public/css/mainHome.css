@@ -6,6 +6,37 @@ body{
     background-color: black;
     color:white;
 }
+.video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: 1; /* Video stays in the background */
+    pointer-events: none;
+}
+
+/* Mainhome content styling */
+.mainhome {
+    position: absolute; /* Position it relative to the video container */
+    bottom:41% ;/* Center vertically */
+   /* Center horizontally */
+    transform: translate(-50%, -50%); /* Proper centering */
+    z-index: 2; /* Ensures it appears above the video */
+    color: white; /* Text color for visibility */
+    text-align: center;
+}
 .mainhome{
     margin-top: 254px;
     display: flex;
