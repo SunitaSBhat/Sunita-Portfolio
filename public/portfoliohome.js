@@ -25,6 +25,8 @@ function toggleMenu() {
     navLinks.style.top="130px";
     navLinks.style.left="-107px";
     navLinks.style.marginBottom="-40px";
+    navLinks.style.opacity="0.9";
+    navLinks.style.borderRadius="34px 34px";
     }
 }
 
