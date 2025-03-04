@@ -8,7 +8,7 @@ body{
     box-sizing: border-box;
 }
 .photo{
-    background-image:url("../images/back.avif") ;
+    background-image:url("../back.avif") ;
     background-repeat: none;
     background-size: cover;
     height: 700px;
@@ -328,7 +328,7 @@ z-index: auto;
     position: relative;
     width: 100%;
    
-    background-image: url('../images/back.avif') !important;
+    background-image: url('../back.avif') !important;
     background-size: cover !important;
     background-position: center !important;
     
